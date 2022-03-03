@@ -2,9 +2,10 @@
 from django.contrib import admin
 from django.urls import path
 
-from quiz_app import views
+from quiz_app.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home)
+    path('', home.home),
+    path('quiz', home.quiz)
 ]
