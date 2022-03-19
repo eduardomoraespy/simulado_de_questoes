@@ -28,10 +28,10 @@ class CadastroInstituicaoForm(forms.ModelForm):
 
     helper.layout = Layout(
         Div(
-            # Div(
-            #     HTML('<h1 class="pt-3">Cadastro de Banco<hr style="margin-top:5px;"></h1>'),
-            #     css_class='row ml-5 mr-5',
-            # ),
+            Div(
+                HTML('<h1 class="pt-3">Cadastro de Instituição</h1>'),
+                css_class='row ml-5 mr-5',
+            ),
             Div(
                 Div(Field('nome_instituicao'), css_class='col-md-6'),
                 Div(Field('nome_curso'), css_class='col-md-6'),
