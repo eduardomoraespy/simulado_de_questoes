@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elegant Dashboard | Dashboard</title>
+  <title>Simulado</title>
   <!-- Favicon -->
   <link rel="shortcut icon" href={% static "./img/svg/logo.svg" %} type="image/x-icon">
   <!-- Custom styles -->
@@ -24,10 +24,10 @@
         <div class="sidebar-head">
             <a href="/" class="logo-wrapper" title="Home">
                 <span class="sr-only">Home</span>
-                <span class="icon logo" aria-hidden="true"></span>
+                <!-- <span class="icon logo" aria-hidden="true"></span> -->
                 <div class="logo-text">
-                    <span class="logo-title">Elegant</span>
-                    <span class="logo-subtitle">Dashboard</span>
+                    <span class="logo-title"> </span>
+                    <span class="logo-subtitle"> </span>
                 </div>
 
             </a>
@@ -39,11 +39,11 @@
         <div class="sidebar-body">
             <ul class="sidebar-body-menu">
                 <li>
-                    <a class="active" href="/"><span class="icon home" aria-hidden="true"></span>Dashboard</a>
+                    <a class="active" href="/"><span class="icon home" aria-hidden="true"></span>Home</a>
                 </li>
                 <li>
                     <a class="show-cat-btn" href="##">
-                        <span class="icon document" aria-hidden="true"></span>Posts
+                        <span class="icon document" aria-hidden="true"></span>Simulado
                         <span class="category__btn transparent-btn" title="Open list">
                             <span class="sr-only">Open list</span>
                             <span class="icon arrow-down" aria-hidden="true"></span>
@@ -51,16 +51,16 @@
                     </a>
                     <ul class="cat-sub-menu">
                         <li>
-                            <a href="posts.html">All Posts</a>
+                            <a href="{% url 'quiz' %}">Iniciar Simulado</a>
                         </li>
                         <li>
-                            <a href="new-post.html">Add new post</a>
+                            <a href="#">Iniciar Simulado Específico</a>
                         </li>
                     </ul>
                 </li>
                 <li>
                     <a class="show-cat-btn" href="##">
-                        <span class="icon folder" aria-hidden="true"></span>Categories
+                        <span class="icon folder" aria-hidden="true"></span>Instituição
                         <span class="category__btn transparent-btn" title="Open list">
                             <span class="sr-only">Open list</span>
                             <span class="icon arrow-down" aria-hidden="true"></span>
@@ -68,7 +68,7 @@
                     </a>
                     <ul class="cat-sub-menu">
                         <li>
-                            <a href="categories.html">All categories</a>
+                            <a href="{% url 'instituicoes' %}">Cadastrar Instituição</a>
                         </li>
                     </ul>
                 </li>
@@ -276,7 +276,7 @@
     <!-- ! Main -->
     <main class="main users chart-page" id="skip-target">
       <div class="container">
-        <h2 class="main-title">Dashboard</h2>
+        <h2 class="main-title">Resumo de atividades do(a):</h2>
         <div class="row stat-cards">
           <div class="col-md-6 col-xl-3">
             <article class="stat-cards-item">
